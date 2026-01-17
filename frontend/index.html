@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CyberGuardian AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🛡️ CyberGuardian AI</h1>
+
+  <textarea id="inputText" placeholder="Paste suspicious message or link here"></textarea>
+
+  <button onclick="scan()">ANALYZE FOR THREATS</button>
+
+  <div id="report">
+    <h2>Threat Analysis</h2>
+
+    <div>
+      Threat Level:
+      <span id="threatBadge" class="badge low">LOW</span>
+    </div>
+
+    <div class="bar">
+      <div id="barFill"></div>
+    </div>
+
+    <p id="scoreText">Risk Score: 0 / 100</p>
+
+    <h3>Reasons</h3>
+    <ul id="reasons"></ul>
+
+    <h3>Recommendation</h3>
+    <p id="recommendation">—</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

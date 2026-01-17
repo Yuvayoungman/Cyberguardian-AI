@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CyberGuardian AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🔐 CyberGuardian AI</h1>
+    <p>Paste a suspicious message to analyze</p>
+
+    <textarea id="inputText" placeholder="Enter message here..."></textarea>
+
+    <button onclick="scan()">Scan Message</button>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
