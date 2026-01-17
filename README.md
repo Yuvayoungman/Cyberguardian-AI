@@ -1,2 +1,16 @@
-# Cyberguardian-AI
-I’m building CyberGuardian AI, a personal security consultant powered by Gemini 3 Flash. It allows users to snap a screenshot of any suspicious message or link and get a quick , readable breakdown of the risk. It’s an explainable AI that identifies the 'how' and 'why' of a scam. We’re making the internet safe by making security understandable."
+## 🔗 Live Demo
+https://cyberguardian-ai-demo.netlify.app
+
+## 🧠 Gemini Integration
+CyberGuardian AI integrates Google Gemini 3 Flash as the AI reasoning layer for phishing detection and explainable security analysis.  
+The public demo runs in simulation mode due to Gemini API quota limits, while the Gemini-powered backend is fully implemented and tested locally.
+
+## 🚀 How to Run Locally
+### Backend
+cd backend
+pip install -r requirements.txt
+python -m uvicorn main:app --reload
+
+### Frontend
+cd frontend
+python -m http.server 5500
